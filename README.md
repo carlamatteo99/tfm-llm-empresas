@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29287697/README.md)
 # Factores asociados a la aparición de empresas en respuestas generadas por modelos de lenguaje
 
 TFM — Carla Mateo Cansino
@@ -9,34 +8,42 @@ El objetivo de este trabajo es ver si hay factores que expliquen por qué unos m
 
 ## Estructura del proyecto
 
-```
 tfm-llm-empresas/
-│
-├── Extracción del contenido web de las empresas del estudio PART1.ipynb
-├── Análisis_estadístico CARLAMATEO.ipynb
-├── requirements.txt
-│
-├── consultas/
-│   ├── GPT.pdf          # Respuestas de ChatGPT a las 5 consultas
-│   └── GEMINI.pdf       # Respuestas de Gemini a las 5 consultas
-│
-├── notebook_y_corpus/
-│   ├── corpus_final.csv                  # Textos web de las empresas
-│   └── datos_empresas_definitivo.xlsx    # Dataset con todas las variables
-│
-└── documento_tfm/
-    └── TFM.CarlaMateoCansino.docx        # Documento escrito del TFM
-```
 
----
+│
+
+├── Extracción del contenido web de las empresas del estudio PART1.ipynb
+
+├── Análisis_estadístico CARLAMATEO.ipynb
+
+├── requirements.txt
+
+│
+
+├── consultas/
+
+│   ├── GPT.pdf          # Respuestas de ChatGPT a las 5 consultas
+
+│   └── GEMINI.pdf       # Respuestas de Gemini a las 5 consultas
+
+│
+
+└── notebook_y_corpus/
+
+├── corpus_final.csv                  # Textos web de las empresas
+
+└── datos_empresas_definitivo.xlsx    # Dataset con todas las variables
 
 ## Notebooks
 
 ### 1. Extracción del contenido web (`PART1.ipynb`)
+
 Extrae el texto de las páginas web de las 28 empresas del estudio usando Selenium y BeautifulSoup. El resultado es el corpus (`corpus_final.csv`) que se usa en el análisis.
 
 ### 2. Análisis estadístico (`Análisis_estadístico CARLAMATEO.ipynb`)
+
 Aquí está todo el análisis. Incluye:
+
 - Embeddings con Sentence-BERT y similitud coseno
 - Correlaciones de Spearman y Mann-Whitney
 - Tests exactos de Fisher
@@ -50,14 +57,14 @@ Aquí está todo el análisis. Incluye:
 
 1. Descarga el repositorio y descomprímelo si es necesario.
 2. Instala las dependencias:
-   ```bash
+```bash
    pip install -r requirements.txt
-   ```
-3. Abre Jupyter desde la carpeta `tfm entregar/` para que las rutas funcionen:
-   ```bash
-   cd tfm\ entregar
+```
+3. Abre Jupyter desde la carpeta `tfm-llm-empresas/` para que las rutas funcionen:
+```bash
+   cd tfm-llm-empresas
    jupyter notebook
-   ```
+```
 4. Ejecuta primero el notebook de extracción y luego el de análisis.
 
 > Los PDFs de las consultas tienen que estar en la carpeta `consultas/` para que el notebook de análisis los encuentre.
