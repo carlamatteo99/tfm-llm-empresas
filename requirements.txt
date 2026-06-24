@@ -1,0 +1,16 @@
+pandas
+numpy
+scipy
+scikit-learn
+sentence-transformers
+torch
+shap
+matplotlib
+seaborn
+pdfplumber
+requests
+beautifulsoup4
+lxml
+selenium
+webdriver-manager
+openpyxl
